@@ -1,9 +1,15 @@
 import './Text.css';
 
-function Text() {
+function Text({ text, textColor, size, underline}) {
+  const style = {
+    color: textColor,
+    fontSize: size+"px",
+    textDecoration: underline == true ? "underline" : "none"
+  }
+
   return (
-    <div className="Text">
-      
+    <div className="Text" style={style} >
+      {text}
     </div>
   );
 }
