@@ -1,16 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Text from './Text';
+
+import Boxes from './Boxes.js'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Text text='123' size="101" textColor={'red'} underline='true'/>
-    <Text text='123' size='63' color={'blue'} underline={false}/>
-    <Text text='123' size={21} color={'green'} underline />
-    <Text text='123' size={160} color={'lime'} />
+    <Boxes titleSize={40} label='Big box' cssClass='big'/>
+    <Boxes titleSize={30}label='Medium box' cssClass='medium'/>
+    <Boxes titleSize={20} label='Small box'cssClass='small'/>
   </React.StrictMode>
 );
 
