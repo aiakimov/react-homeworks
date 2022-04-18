@@ -1,14 +1,14 @@
-import './Text.css';
+import "./Text.css";
 
-function Text({ text, textColor, size, underline}) {
+function Text({ text, textColor, size, underline }) {
   const style = {
     color: textColor,
-    fontSize: size+"px",
-    textDecoration: underline == true ? "underline" : "none"
-  }
+    fontSize: size + "px",
+    textDecoration: underline == true ? "underline" : "none",
+  };
 
   return (
-    <div className="Text" style={style} >
+    <div className="Text" style={style}>
       {text}
     </div>
   );
