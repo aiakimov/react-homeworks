@@ -4,7 +4,8 @@ import React, { useState } from "react";
 function ItalicFonts({ toolTip }) {
   const [state, setState] = useState(false);
   const [toolTipStyle, setToolTipStyle] = useState({
-    display: "none",
+    visibility: "hidden",
+    opacity: 0,
   });
   const italicStyle = state ? "italic-font" : "";
 
@@ -14,14 +15,18 @@ function ItalicFonts({ toolTip }) {
       <button
         onPointerEnter={(e) => {
           setToolTipStyle({
-            display: "block",
-            left: e.screenX + 20 + "px",
-            top: e.screenY + 580 + "px",
+            visibility: "visible",
+            opacity: 1,
+            left: e.screenX + 10 + "px",
+            top: e.screenY - 80 + "px",
           });
         }}
-        onPointerLeave={() => {
+        onPointerLeave={(e) => {
           setToolTipStyle({
-            display: "none",
+            visibility: "hidden",
+            left: e.screenX + 10 + "px",
+            top: e.screenY - 80 + "px",
+            opacity: 0,
           });
         }}
         className="italic-btn"
