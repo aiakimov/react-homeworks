@@ -11,21 +11,19 @@ function Game() {
     left: position[1] + "px",
   };
 
-  console.log();
-
   function getRandomInt(max) {
     return Math.floor(Math.random() * max);
   }
 
   const playGame = () => {
     const rgb = [getRandomInt(255), getRandomInt(255), getRandomInt(255)];
-    setPosition([getRandomInt(900), getRandomInt(900)]);
+    setPosition([getRandomInt(799), getRandomInt(799)]);
     setColor("rgb(" + rgb.join() + ")");
   };
 
   return (
     <div className="wrapper-game">
-      <div className="circle" style={style} onClick={() => playGame()}></div>
+      <div className="circle" style={style} onClick={playGame}></div>
     </div>
   );
 }
