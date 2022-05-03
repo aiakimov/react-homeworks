@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+img {
+  width: 95%;
+  filter: opacity(60%);
+  transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+h2 {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    17deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(27, 42, 35) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  text-shadow: rgb(211, 210, 204) 1px 0 20px;
+  color: rgb(156, 252, 197);
+  text-align: center;
+  margin: 0;
+  padding: 30px 0;
+  font-size: 40px;
+}
+.counter {
+  display: block;
+}
+.wrapper-list {
+  padding: 70px 50px;
+  margin: 0 auto;
+  background: rgb(84, 232, 157);
+  background: linear-gradient(
+    180deg,
+    rgba(12, 12, 12) 0%,
+    rgba(27, 42, 35) 20%,
+    rgb(10, 10, 10) 100%
+  );
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.hero-card {
+  width: 195px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  cursor: pointer;
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.726);
+  font-weight: 600;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  position: relative;
+}
+.hero-card:hover {
+  box-shadow: 0 0 5px 3px rgba(72, 136, 98, 0.747);
+}
+.hero-card:active {
+  box-shadow: 0 0 15px 4px rgba(72, 136, 98, 0.747);
+}
+.hero-card:hover > img {
+  width: 145%;
+  filter: opacity(100%);
+}
+.hero-card > span {
+  position: absolute;
+  bottom: 10px;
+  text-shadow: rgb(5, 4, 0) 5px 0 50px;
+}
+.checked-card {
+  color: rgb(0, 255, 115);
+  box-shadow: 0 0 20px 8px rgba(156, 252, 198, 0.747);
+}
+
+.checked-card > img {
+  filter: none;
+  width: 130%;
+}
+.checked-card:hover {
+  box-shadow: 0 0 20px 12px rgba(72, 136, 98, 0.747);
+}
+.warning {
+  position: absolute;
+  right: 170px;
+  top: 170px;
+  padding: 0;
+  visibility: hidden;
+  font-size: 30px;
+  color: rgb(249, 250, 249);
+  text-shadow: rgb(211, 210, 204) 1px 0 10px;
+  text-align: center;
+  animation-name: warning;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation-iteration-count: infinite;
+  z-index: 3;
+}
+
+@keyframes warning {
+  0% {
+    opacity: 0;
+    visibility: visible;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
