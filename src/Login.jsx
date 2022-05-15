@@ -4,10 +4,9 @@ import "./Login.css";
 
 const Login = () => {
   const [loggedIn, setLoggedIn] = useState(false);
-  console.log(loggedIn);
 
   const onClick = () => {
-    setLoggedIn(true);
+    setTimeout(() => setLoggedIn(true), 2000);
   };
 
   return (
