@@ -15,14 +15,12 @@ const Inputs: FC<PropsInputs> = () => {
   const [result, setResult] = useState(false);
 
   const onChange: Function = (
-    event: ChangeEvent<
-      HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
-    >,
+    event: ChangeEvent<HTMLInputElement>,
     setFunc: React.Dispatch<React.SetStateAction<any>>,
     type: Function
   ): void => {
-    if (type === Boolean) {
-      checkbox ? setFunc(false) : setFunc(true);
+    if (event.target.name === "checkbox") {
+      setFunc(event.target.checked);
       return;
     }
     setFunc(type(event.target.value));
