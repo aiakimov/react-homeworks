@@ -1,4 +1,4 @@
-import abbadon from "../Abaddon_icon.webp";
+import abbadon from "./img/Abaddon_icon.webp";
 import alchemist from "./img/Alchemist_icon.webp";
 import ancient_apparition from "./img/Ancient_Apparition_icon.webp";
 import Anti_Mage from "./img/Anti-Mage_icon.webp";

@@ -1,24 +1,26 @@
 import React, { useEffect, useState } from "react";
 import "./DreamTeam.css";
 import List from "./List";
-import { setToLocalStorage, getFromLocalStorage } from "./localstorage";
-var _ = require("lodash");
 
 function DreamTeam() {
-  const [checkedCard, setCheckedCard] = useState(false);
-  const setChecked = (index) => {
-    console.log(index);
-  };
+  const [amountCheckedCards, setAmountCheckedCards] = useState(0);
 
   return (
     <div>
-      <h2>
-        choose heroes for your dream team!
-        <span className="counter"> of 5 heroes selected!</span>
-      </h2>
-      <h1 className="warning">you can only choose 5 heroes!</h1>
+      <div className="header">
+        <h2>
+          choose heroes for your dream team!
+          <span className="counter">
+            {amountCheckedCards} of 5 heroes selected!
+          </span>
+        </h2>{" "}
+        {amountCheckedCards === 5 && (
+          <h1 className="warning">you can only choose 5 heroes!</h1>
+        )}
+      </div>
+
       <ul className="wrapper-list">
-        <List onClickHandler={setChecked} />
+        <List setAmountCheckedCards={setAmountCheckedCards} />
       </ul>
     </div>
   );
