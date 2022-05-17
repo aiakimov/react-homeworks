@@ -1,0 +1,45 @@
+.pagination-bar {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  background-color: black;
+}
+.pagination-btn {
+  cursor: pointer;
+  padding: 10px;
+  min-width: 40px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.contant {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 20px;
+  min-height: 1100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1533113354171-490d836238e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80");
+}
+.contant > div > img {
+  width: 100px;
+  border-radius: 12px;
+}
+.contant > div {
+  width: 150px;
+  backdrop-filter: blur(19px) saturate(85%);
+  -webkit-backdrop-filter: blur(19px) saturate(85%);
+  background-color: rgba(17, 25, 40, 0.22);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  color: aliceblue;
+  padding: 10px 5px 0;
+  text-align: center;
+}
