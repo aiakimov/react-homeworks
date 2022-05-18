@@ -28,8 +28,8 @@ const AddName: FC = () => {
   return (
     <div className="wrapper">
       <ul>
-        {people.map((name) => {
-          return <li key={name}>{name}</li>;
+        {people.map((name, index) => {
+          return <li key={index}>{name}</li>;
         })}
       </ul>
       <button onClick={addNameToList}>Add Name</button>
