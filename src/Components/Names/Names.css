@@ -3,7 +3,7 @@
   text-align: center;
   font-size: 25px;
 }
-.wrapper {
+.wrapper-names {
   display: flex;
   flex-direction: column;
   gap: 10px;

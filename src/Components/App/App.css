@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap");
+
+.header {
+  padding: 20px 10px 0;
+  position: sticky;
+  top: 0;
+  display: flex;
+  gap: 20%;
+  justify-content: space-around;
+  background: rgba(169, 45, 45, 0.73);
+  box-shadow: 0 4px 20px rgba(90, 25, 25, 0.73);
+  backdrop-filter: blur(5.3px);
+  -webkit-backdrop-filter: blur(5.3px);
+}
+.header > img {
+  width: 5%;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100px;
+  list-style-type: none;
+}
+.navbar > li {
+  font-size: 30px;
+  text-decoration: none;
+  display: flex;
+  gap: 20px;
+  font-family: "Odibee Sans", cursive;
+}
+li > a {
+  text-decoration: none;
+  color: rgb(217, 237, 255);
+  position: relative;
+}
+a:hover {
+  color: white;
+  transition: all 0.4s ease-in-out;
+}
+a::after {
+  transition: all 0.3s ease-in-out;
+  height: 2px;
+  opacity: 0;
+  content: "";
+  background-color: aliceblue;
+  position: absolute;
+  top: 30px;
+  left: -3px;
+  width: calc(100% + 6px);
+}
+a:hover:after {
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+.wrapper {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}

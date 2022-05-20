@@ -4,7 +4,7 @@ import Users from "./data.json";
 
 function Names() {
   return (
-    <div className="wrapper">
+    <div className="wrapper-names">
       {Users.map((el) => {
         return (
           <div key={el._id} className="user-card">

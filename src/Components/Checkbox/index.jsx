@@ -1,6 +1,6 @@
 import { useState } from "react";
-import doneImg from "./img/Checkbox/1.png";
-import errorImg from "./img/Checkbox/2.png";
+import doneImg from "./img/1.png";
+import errorImg from "./img/2.png";
 import "./Checkbox.css";
 
 function Checkbox() {
@@ -17,7 +17,7 @@ function Checkbox() {
         }}
         className="checkbox"
       >
-        <img src={img} alt="" />
+        <img className="checkbox-img" src={img} alt="" />
       </div>
     </div>
   );

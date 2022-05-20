@@ -10,7 +10,7 @@
   border-radius: 20px;
 }
 
-button {
+.counter-button {
   padding: 10px;
   width: 60px;
   border: none;
@@ -22,14 +22,14 @@ button {
   transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-button:hover {
+.counter-button:hover {
   box-shadow: 0 0 6px 0 rgba(8, 72, 192, 0.384);
 }
-button:active {
+.counter-button:active {
   background-color: rgba(8, 72, 192, 0.212);
   box-shadow: 0 0 6px 0 rgba(11, 35, 78, 0.384);
 }
-h1 {
+.title-counter {
   font-size: 40px;
   text-shadow: 1px 5px rgba(8, 72, 192, 0.384);
   padding-bottom: 7px;
