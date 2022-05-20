@@ -1,9 +1,7 @@
 .wrapper-sh {
-  height: 100vh;
-  margin: 0 auto;
-  border: 1px solid black;
+  margin: 20px auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -17,16 +15,12 @@
   align-self: center;
   margin: 2rem;
   animation: spin 2s linear infinite;
-  position: absolute;
-  top: 30%;
 }
 .text {
   font-size: 70px;
   font-weight: 600;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #3498db;
-  position: absolute;
-  top: 20%;
 }
 @keyframes spin {
   0% {

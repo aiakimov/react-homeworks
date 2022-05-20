@@ -1,12 +1,12 @@
 import { MdRepeat, MdRepeatOne } from "react-icons/md";
 import React, { useState } from "react";
 import "./Button.css";
-import imgPlayer from "./img/Button/1.gif";
+import imgPlayer from "./img/1.gif";
 
 function CustomButton() {
-  const notRepeat = <MdRepeat color="rgb(0 49 122 / 43%)" size="5em" />;
-  const onRepeat = <MdRepeat color="rgb(0 49 122 / 83%)" size="5em" />;
-  const oneRepeat = <MdRepeatOne color="rgb(0 49 122 / 83%)" size="5em" />;
+  const notRepeat = <MdRepeat color="rgb(0 49 122 / 43%)" size="4em" />;
+  const onRepeat = <MdRepeat color="rgb(0 49 122 / 83%)" size="4em" />;
+  const oneRepeat = <MdRepeatOne color="rgb(0 49 122 / 83%)" size="4em" />;
   const conditions = [];
   conditions.push(notRepeat, onRepeat, oneRepeat);
 

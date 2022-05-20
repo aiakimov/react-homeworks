@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
 .login-wrapper {
-  margin-top: 10vh;
   display: flex;
   justify-content: center;
+  width: 90vw;
+  margin: 10vh auto 0;
 }
 .login-btn {
   padding: 5px 30px;

@@ -14,9 +14,13 @@ class Counter extends Component {
   render() {
     return (
       <div className="wrapper-counter">
-        <button onClick={() => this.minusOne()}>-</button>
+        <button className="counter-button" onClick={() => this.minusOne()}>
+          -
+        </button>
         <h1>{this.state.counter}</h1>
-        <button onClick={() => this.plusOne()}>+</button>
+        <button className="counter-button" onClick={() => this.plusOne()}>
+          +
+        </button>
       </div>
     );
   }

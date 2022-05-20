@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import card from "./img/Login/1.jpg";
+import card from "./img/1.jpg";
 import "./Login.css";
 
 const Login = () => {
