@@ -1,26 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap");
 
 .header {
-  padding: 20px 10px 0;
+  padding: 10px 10px 10px;
   position: sticky;
   top: 0;
   display: flex;
-  gap: 20%;
   justify-content: space-around;
   background: rgba(169, 45, 45, 0.73);
   box-shadow: 0 4px 20px rgba(90, 25, 25, 0.73);
   backdrop-filter: blur(5.3px);
   -webkit-backdrop-filter: blur(5.3px);
+  z-index: 9999;
+  width: 100vw;
 }
 .header > img {
   width: 5%;
+  height: 5%;
+  min-width: 100px;
 }
 .navbar {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  height: 100px;
+  flex-wrap: wrap;
   list-style-type: none;
 }
 .navbar > li {
@@ -32,7 +34,7 @@
 }
 li > a {
   text-decoration: none;
-  color: rgb(217, 237, 255);
+  color: rgb(255, 205, 198);
   position: relative;
 }
 a:hover {
@@ -44,7 +46,7 @@ a::after {
   height: 2px;
   opacity: 0;
   content: "";
-  background-color: aliceblue;
+  background-color: rgb(255, 255, 255);
   position: absolute;
   top: 30px;
   left: -3px;
@@ -61,4 +63,19 @@ a:hover:after {
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+.active {
+  color: rgb(255, 255, 255);
+}
+.title-hp {
+  font-family: "Odibee Sans", cursive;
+  font-size: 120px;
+  color: rgba(169, 45, 45, 0.73);
+  margin: 100px auto;
+  text-align: center;
+}
+.logo-hp {
+  width: 800px;
+  margin: 0 auto;
+  display: block;
 }

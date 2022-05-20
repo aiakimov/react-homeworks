@@ -1,11 +1,11 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import { Route, Routes, Link } from "react-router-dom";
+import { Route, Routes, NavLink } from "react-router-dom";
 import "./App.css";
 import logo from "./img/TheAkim-logo-white.png";
 
-import Boxes from "../Boxes";
+// import Boxes from "../Boxes";
 import CustomButton from "../Button";
+import Home from "../Home";
 import Checkbox from "../Checkbox";
 import Counter from "../Counter";
 import Game from "../Game";
@@ -24,23 +24,25 @@ const App = () => {
         <img src={logo} />
         <ul className="navbar">
           <li>
-            <Link to="/boxes">Boxes</Link>
-            <Link to="/button">Button</Link>
-            <Link to="/checkbox">Checkbox</Link>
-            <Link to="/counter">Counter</Link>
-            <Link to="/game">Game</Link>
-            <Link to="/fonts">ItalicFonts</Link>
-            <Link to="/login">Login</Link>
-            <Link to="/names">Names</Link>
-            <Link to="/say_hi">SayHi</Link>
-            <Link to="/spinner">Spinner</Link>
-            <Link to="/task">Task</Link>
-            <Link to="/text">Text</Link>
+            {/* <NavLink to="/boxes">Boxes</NavLink> */}
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="/button">Button</NavLink>
+            <NavLink to="/checkbox">Checkbox</NavLink>
+            <NavLink to="/counter">Counter</NavLink>
+            <NavLink to="/game">Game</NavLink>
+            <NavLink to="/fonts">ItalicFonts</NavLink>
+            <NavLink to="/login">Login</NavLink>
+            <NavLink to="/names">Names</NavLink>
+            <NavLink to="/say_hi">SayHi</NavLink>
+            <NavLink to="/spinner">Spinner</NavLink>
+            <NavLink to="/task">Task</NavLink>
+            <NavLink to="/text">Text</NavLink>
           </li>
         </ul>
       </nav>
       <Routes>
-        <Route
+        <Route path="/" element={<Home />} />
+        {/* <Route
           path="/boxes"
           element={
             <div className="wrapper">
@@ -49,7 +51,7 @@ const App = () => {
               <Boxes cssClass="small" label="small" titleSize={20} />
             </div>
           }
-        />
+        /> */}
         <Route path="/button" element={<CustomButton />} />
         <Route path="/checkbox" element={<Checkbox />} />
         <Route path="/counter" element={<Counter />} />
