@@ -1,9 +1,9 @@
 import React from "react";
-import { Route, Routes, NavLink } from "react-router-dom";
+import { Route, Routes, NavLink, Link } from "react-router-dom";
 import "./App.css";
 import logo from "./img/TheAkim-logo-white.png";
 
-// import Boxes from "../Boxes";
+import Boxes from "../Boxes";
 import CustomButton from "../Button";
 import Home from "../Home";
 import Checkbox from "../Checkbox";
@@ -22,27 +22,55 @@ const App = () => {
     <>
       <nav className="header">
         <img src={logo} />
+
         <ul className="navbar">
           <li>
-            {/* <NavLink to="/boxes">Boxes</NavLink> */}
             <NavLink to="/">Home</NavLink>
+          </li>
+          <li>
+            <NavLink to="/boxes">Boxes</NavLink>
+          </li>
+          <li>
             <NavLink to="/button">Button</NavLink>
+          </li>
+          <li>
             <NavLink to="/checkbox">Checkbox</NavLink>
+          </li>
+          <li>
             <NavLink to="/counter">Counter</NavLink>
+          </li>
+          <li>
             <NavLink to="/game">Game</NavLink>
+          </li>
+          <li>
             <NavLink to="/fonts">ItalicFonts</NavLink>
+          </li>
+          <li>
             <NavLink to="/login">Login</NavLink>
+          </li>
+          <li>
             <NavLink to="/names">Names</NavLink>
+          </li>
+          <li>
             <NavLink to="/say_hi">SayHi</NavLink>
+          </li>
+          <li>
             <NavLink to="/spinner">Spinner</NavLink>
+          </li>
+          <li>
             <NavLink to="/task">Task</NavLink>
+          </li>
+          <li>
             <NavLink to="/text">Text</NavLink>
           </li>
+          <li></li>
+          <li></li>
+          <li></li>
         </ul>
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route
+        <Route
           path="/boxes"
           element={
             <div className="wrapper">
@@ -51,7 +79,7 @@ const App = () => {
               <Boxes cssClass="small" label="small" titleSize={20} />
             </div>
           }
-        /> */}
+        />
         <Route path="/button" element={<CustomButton />} />
         <Route path="/checkbox" element={<Checkbox />} />
         <Route path="/counter" element={<Counter />} />

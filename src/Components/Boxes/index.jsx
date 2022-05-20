@@ -1,6 +1,6 @@
 import "./Boxes.css";
 
-function Boxes({ cssClass, label, titleSize }) {
+const Boxes = ({ cssClass, label, titleSize }) => {
   const textStyle = {
     fontSize: titleSize + "px",
   };
@@ -12,6 +12,6 @@ function Boxes({ cssClass, label, titleSize }) {
       </div>
     </div>
   );
-}
+};
 
 export default Boxes;
