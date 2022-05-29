@@ -19,6 +19,8 @@ const AddName: FC = () => {
   ];
   const [people, setPeople] = useState<string[]>(["Jonh", "Bob", "Marlyn"]);
 
+  let nameId = 0;
+
   const addNameToList = () => {
     const index = Math.floor(Math.random() * 13);
     const newArray = [...people, names[index]];
@@ -28,8 +30,8 @@ const AddName: FC = () => {
   return (
     <div className="wrapper">
       <ul>
-        {people.map((name, index) => {
-          return <li key={index}>{name}</li>;
+        {people.map((name) => {
+          return <li key={(nameId += 1)}>{name}</li>;
         })}
       </ul>
       <button onClick={addNameToList}>Add Name</button>
