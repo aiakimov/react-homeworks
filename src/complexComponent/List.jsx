@@ -10,7 +10,12 @@ function List({ setAmountCheckedCards }) {
     })
   );
   useEffect(() => {
-    const amount = selectedHeroes.filter((el) => el === true).length;
+    const amount = selectedHeroes.reduce((acc, el) => {
+      if (el === true) {
+        acc.push(el);
+      }
+      return acc;
+    }, []).length;
     setInnerAmountCheckedCards(amount);
     setAmountCheckedCards(amount);
   }, [selectedHeroes]);
@@ -21,17 +26,19 @@ function List({ setAmountCheckedCards }) {
     }
   }, []);
 
+  const onCopyHero = (copy, index) => {
+    copy[index] = !copy[index];
+    setSelectedHeroes(copy);
+    setToLocalStorage(copy);
+  };
+
   const onSelectHero = (index) => {
     const copySelectedHeroes = [...selectedHeroes];
     if (innerAmountCheckedCards < 5) {
-      copySelectedHeroes[index] = !copySelectedHeroes[index];
-      setSelectedHeroes(copySelectedHeroes);
-      setToLocalStorage(copySelectedHeroes);
+      onCopyHero(copySelectedHeroes, index);
     } else {
       if (copySelectedHeroes[index] === true) {
-        copySelectedHeroes[index] = !copySelectedHeroes[index];
-        setSelectedHeroes(copySelectedHeroes);
-        setToLocalStorage(copySelectedHeroes);
+        onCopyHero(copySelectedHeroes, index);
       }
     }
   };
