@@ -5,25 +5,15 @@ import { useParams } from "react-router-dom";
 import "./Figure.css";
 
 const Figure: FC = () => {
-  const [style, setStyle] = useState<object>({});
-  const params = useParams();
-
-  const getStyle = () => {
-    const radius = Number(params.type) === 1 ? "0" : "50%";
-    const newStyle = {
-      backgroundColor: `${params.color}`,
-      borderRadius: `${radius}`,
-    };
-    setStyle(newStyle);
+  const { type, color } = useParams();
+  const newStyle = {
+    backgroundColor: `${color}` || "red",
+    borderRadius: `${Number(type) === 1 ? "0" : "50%"}`,
   };
 
-  useEffect(() => {
-    getStyle();
-  }, [params]);
-
   return (
-    <div className="figure" style={style}>
-      {Number(params.type) === 1 ? "Square" : "Circle"}
+    <div className="figure" style={newStyle}>
+      {Number(type) === 1 ? "Square" : "Circle"}
     </div>
   );
 };
