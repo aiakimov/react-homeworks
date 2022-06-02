@@ -7,7 +7,7 @@ const types = [1, 2];
 const colors = ["red", "gray", "blue", "cyan", "yellow", "orange"];
 
 const NavBar: FC = () => {
-  const [selectedColor, setSellectedColor] = useState<string>("");
+  const [selectedColor, setSellectedColor] = useState<string>("red");
   const [selectedType, setSellectedType] = useState<number>(1);
 
   return (
