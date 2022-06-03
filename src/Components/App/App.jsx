@@ -73,8 +73,9 @@ const App = () => {
           path="/boxes"
           element={
             <div className="wrapper">
-	@@ -51,7 +79,7 @@ const App = () => {
               <Boxes cssClass="small" label="small" titleSize={20} />
+              <Boxes cssClass="medium" label="medium" titleSize={30} />
+              <Boxes cssClass="big" label="big" titleSize={40} />
             </div>
           }
         />
@@ -102,9 +103,9 @@ const App = () => {
           path="/text"
           element={
             <Text
-              text="text text text"
+              text="some text, color, size, underline in props"
               textColor="red"
-              size={25}
+              size={45}
               underline={true}
             />
           }
