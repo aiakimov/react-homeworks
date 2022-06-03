@@ -16,7 +16,6 @@ import SayHi from "../SayHi";
 import Spinner from "../Spinner";
 import Task from "../Task";
 import Text from "../Text";
-
 const App = () => {
   return (
     <>
@@ -74,8 +73,7 @@ const App = () => {
           path="/boxes"
           element={
             <div className="wrapper">
-              <Boxes cssClass="big" label="big" titleSize={40} />
-              <Boxes cssClass="medium" label="medium" titleSize={30} />
+	@@ -51,7 +79,7 @@ const App = () => {
               <Boxes cssClass="small" label="small" titleSize={20} />
             </div>
           }
@@ -115,5 +113,4 @@ const App = () => {
     </>
   );
 };
-
 export default App;
