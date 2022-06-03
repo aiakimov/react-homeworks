@@ -8,13 +8,13 @@ body {
   margin-bottom: -30px;
 }  */
 
-img {
+.header-herous > img {
   width: 95%;
   filter: opacity(60%);
   transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
-h2 {
+.header-herous > h2 {
   text-shadow: rgb(211, 210, 204) 1px 0 20px;
   color: rgb(156, 252, 197);
   text-align: center;

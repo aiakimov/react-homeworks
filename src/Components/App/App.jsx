@@ -98,7 +98,7 @@ const App = () => {
             <div className="wrapper">
               <Boxes cssClass="small" label="small" titleSize={20} />
               <Boxes cssClass="medium" label="medium" titleSize={30} />
-              <Boxes cssClass="big" label="big" titleSize={40} />
+              <Boxes cssClass="big" label="big" titleSize={50} />
             </div>
           }
         />
