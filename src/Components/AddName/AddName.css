@@ -1,0 +1,26 @@
+.wrapper-addname {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  margin: 100px auto;
+}
+.user-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
+.user-li {
+  display: block;
+  text-decoration: none;
+  font-size: large;
+  font-weight: 600;
+  text-align: center;
+}
+button {
+  cursor: pointer;
+  font-size: larger;
+  padding: 3px 15px;
+  margin-bottom: 100px;
+}

@@ -1,0 +1,15 @@
+.wrapper-game {
+  width: 1000px;
+  height: 1000px;
+  border: 1px solid black;
+  margin: 10px auto;
+  position: relative;
+}
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  cursor: pointer;
+}

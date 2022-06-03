@@ -1,0 +1,28 @@
+.wrapper-button {
+  margin: 30px auto;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+  width: 90vw;
+}
+
+img {
+  width: 20%;
+  position: relative;
+}
+.repeatBtn {
+  background-color: white;
+  cursor: pointer;
+  border-radius: 20px;
+  border: whitesmoke;
+  box-shadow: 0 0 7px 1px white;
+  transition: all 0.3s ease-in-out;
+}
+
+.repeatBtn:hover {
+  background-color: aliceblue;
+  box-shadow: 0 0 8px 2px rgb(148, 228, 241);
+}

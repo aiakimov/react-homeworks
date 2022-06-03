@@ -1,0 +1,31 @@
+.big {
+  height: 350px;
+  width: 350px;
+  background-color: chocolate;
+  margin: 0 auto;
+  border: 2px solid yellow;
+}
+
+.medium {
+  height: 250px;
+  width: 250px;
+  background-color: coral;
+  margin: 0 auto;
+  border: 2px solid yellow;
+}
+
+.small {
+  height: 150px;
+  width: 150px;
+  background-color: orange;
+  margin: 0 auto;
+  border: 2px solid yellow;
+}
+
+h2 {
+  color: yellow;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 900;
+  font-style: italic;
+  text-align: center;
+}

@@ -1,6 +1,4 @@
 import { FC } from "react";
-import { useEffect } from "react";
-import { useState } from "react";
 import { useParams } from "react-router-dom";
 import "./Figure.css";
 
@@ -8,7 +6,7 @@ const Figure: FC = () => {
   const { type, color } = useParams();
   const newStyle = {
     backgroundColor: `${color}` || "red",
-    borderRadius: `${Number(type) === 1 ? "0" : "50%"}`,
+    borderRadius: `${Number(type) === 1 ? "0" : "50%"}` || "50%",
   };
 
   return (
