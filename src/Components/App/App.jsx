@@ -16,6 +16,7 @@ import SayHi from "../SayHi";
 import Spinner from "../Spinner";
 import Task from "../Task";
 import Text from "../Text";
+
 const App = () => {
   return (
     <>
@@ -114,4 +115,5 @@ const App = () => {
     </>
   );
 };
+
 export default App;
