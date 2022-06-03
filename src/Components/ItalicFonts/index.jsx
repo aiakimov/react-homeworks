@@ -17,15 +17,15 @@ function ItalicFonts({ toolTip }) {
           setToolTipStyle({
             visibility: "visible",
             opacity: 1,
-            left: e.screenX + 10 + "px",
-            top: e.screenY - 80 + "px",
+            left: e.screenX - 50 + "px",
+            top: e.screenY - 130 + "px",
           });
         }}
         onPointerLeave={(e) => {
           setToolTipStyle({
             visibility: "hidden",
-            left: e.screenX + 10 + "px",
-            top: e.screenY - 80 + "px",
+            left: e.screenX + "px",
+            top: e.screenY + "px",
             opacity: 0,
           });
         }}

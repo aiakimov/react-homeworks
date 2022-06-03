@@ -31,7 +31,7 @@ const TimePicker: FC = () => {
 
   return (
     <div className="wrapper">
-      <h1>
+      <h1 className="time">
         <span>{hours.toString().padStart(2, "0")}</span> :{" "}
         <span>{mins.toString().padStart(2, "0")}</span>
       </h1>

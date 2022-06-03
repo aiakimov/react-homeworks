@@ -44,10 +44,14 @@ const AddName: FC = () => {
   };
 
   return (
-    <div className="wrapper">
-      <ul>
+    <div className="wrapper-addname">
+      <ul className="user-list">
         {people.map((user) => {
-          return <li key={user.id}>{user.name}</li>;
+          return (
+            <li className="user-li" key={user.id}>
+              {user.name}
+            </li>
+          );
         })}
       </ul>
       <button onClick={addNameToList}>Add Name</button>

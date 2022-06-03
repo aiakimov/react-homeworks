@@ -19,10 +19,11 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: flex-start;
   gap: 20px;
-  min-height: 1100px;
+  padding: 100px 100px;
+  min-height: 60vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

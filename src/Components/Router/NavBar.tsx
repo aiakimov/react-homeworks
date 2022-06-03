@@ -1,6 +1,6 @@
 import { FC, useState } from "react";
-import { Routes, Route, Link } from "react-router-dom";
-import Figure from "./Figure";
+import { NavLink } from "react-router-dom";
+
 import "./Figure.css";
 
 const types = [1, 2];
@@ -16,31 +16,30 @@ const NavBar: FC = () => {
         <div className="nav">
           {colors.map((color) => {
             return (
-              <Link
-                to={`figure/${selectedType}/${color}`}
+              <NavLink
+                key={color}
+                to={`/navbar/figure/${selectedType}/${color}`}
                 onClick={() => setSellectedColor(color)}
               >
                 {color}
-              </Link>
+              </NavLink>
             );
           })}
         </div>
         <div className="nav">
           {types.map((type) => {
             return (
-              <Link
-                to={`figure/${type}/${selectedColor}`}
+              <NavLink
+                key={type}
+                to={`/navbar/figure/${type}/${selectedColor}`}
                 onClick={() => setSellectedType(type)}
               >
                 {type === 1 ? "Square" : "Circle"}
-              </Link>
+              </NavLink>
             );
           })}
         </div>
       </div>
-      <Routes>
-        <Route path="figure/:type/:color" element={<Figure />} />
-      </Routes>
     </>
   );
 };

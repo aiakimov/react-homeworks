@@ -16,6 +16,13 @@ import SayHi from "../SayHi";
 import Spinner from "../Spinner";
 import Task from "../Task";
 import Text from "../Text";
+import NavBar from "../Router/NavBar";
+import Figure from "../Router/Figure";
+import AddName from "../AddName";
+import DreamTeam from "../complexComponent";
+import Inputs from "../Inputs";
+import Pagination from "../Pagination";
+import TimePicker from "../TimePicker";
 
 const App = () => {
   return (
@@ -63,9 +70,24 @@ const App = () => {
           <li>
             <NavLink to="/text">Text</NavLink>
           </li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>
+            <NavLink to="/navbar">Figure</NavLink>
+          </li>
+          <li>
+            <NavLink to="/addname">AddName</NavLink>
+          </li>
+          <li>
+            <NavLink to="/herous">Herous</NavLink>
+          </li>
+          <li>
+            <NavLink to="/inputs">Inputs</NavLink>
+          </li>
+          <li>
+            <NavLink to="/pagination">Pagination</NavLink>
+          </li>
+          <li>
+            <NavLink to="/timepicker">TimePicker</NavLink>
+          </li>
         </ul>
       </nav>
       <Routes>
@@ -111,6 +133,21 @@ const App = () => {
             />
           }
         />
+        <Route path="/navbar" element={<NavBar />}></Route>
+        <Route
+          path="/navbar/figure/:type/:color"
+          element={
+            <>
+              <NavBar />
+              <Figure />
+            </>
+          }
+        />
+        <Route path="/addname" element={<AddName />} />
+        <Route path="/herous" element={<DreamTeam />} />
+        <Route path="/inputs" element={<Inputs />} />
+        <Route path="/pagination" element={<Pagination />} />
+        <Route path="/timepicker" element={<TimePicker />} />
       </Routes>
     </>
   );

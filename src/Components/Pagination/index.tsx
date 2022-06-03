@@ -19,7 +19,7 @@ const Pagination: FC = () => {
 
   const getPhotos = async () => {
     const responce = await axios.get(
-      API + `photos?_page=${pageNumber}&_limit=24`
+      API + `photos?_page=${pageNumber}&_limit=10`
     );
     setPhotos(responce?.data);
   };

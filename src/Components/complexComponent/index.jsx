@@ -7,7 +7,7 @@ function DreamTeam() {
 
   return (
     <div>
-      <div className="header">
+      <div className="header-herous">
         <h2>
           choose heroes for your dream team!
           <span className="counter">
